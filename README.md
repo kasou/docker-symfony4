@@ -44,8 +44,8 @@ docker-compose exec php composer install
 
 ### tests
 ```
-docker-compose exec php bin/phpunit [...]
-docker-compose exec php bin/phpunit
+docker-compose exec php vendor/bin/simple-phpunit [...]
+docker-compose exec php vendor/bin/simple-phpunit
 ```
 
 ### php-cs-fixer
