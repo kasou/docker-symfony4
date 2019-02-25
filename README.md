@@ -7,7 +7,7 @@ wget https://github.com/jacquesndl/docker-symfony4/archive/master.zip
 unzip master.zip && rm master.zip
 mv docker-symfony4-master/* . && rm -R docker-symfony4-master
 cp docker/db/.env.dist docker/db/.env && cp docker/php/.env.dist docker/php/.env
-docker-compose up -d --build && docker-compose exec php composer create-project symfony/website-skelet$
+docker-compose up -d --build && docker-compose exec php composer create-project symfony/website-skeleton app
 sudo chown 1000:1000 -R .
 sudo chmod 777 -R .
 rm -R var
